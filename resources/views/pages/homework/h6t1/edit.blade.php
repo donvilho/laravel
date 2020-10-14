@@ -34,7 +34,7 @@
                                  </div>
                            
                                   <div>
-                                    <button type="submit">Update</button>
+                                    <br><button type="submit">Update</button>
                                   </div>
                            
                                 </form>
@@ -49,10 +49,7 @@
                                      </div>
                               
                                    </form>
-
-
-
-                                <button type="button" onclick="window.location='{{ url('customers/') }}'">Takaisin</button>    
+                                <br><button type="button" onclick="window.location='{{ url('customers/') }}'">Takaisin</button>    
                     </div>
                 </div>
             </div>

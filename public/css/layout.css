@@ -36,38 +36,33 @@ body {
 }
 
 .content-item {
-    background-color:#c7b894;
+    background-color: #c7b894;
     border-radius: 5px;
     word-wrap: break-word;
     border: 1px solid #926d35;
     overflow: hidden;
     height: auto;
     margin: auto 1.25em 2em 1.25em;
-
 }
 
 .content-item > div {
     margin: auto 1.25em 2em 1.25em;
 }
 
-
-.odd > td:nth-child(odd){
-    background-color:white;
+.odd > td:nth-child(odd) {
+    background-color: white;
 }
-
 
 .content-center {
     display: inline-block;
     margin: 1.25em auto 1.25em auto;
 }
 
-
-
 .homeworkText {
     background-color: whitesmoke;
     width: 75%;
     margin: auto;
-    padding-bottom: 10px;
+    padding: 10px;
     border: 1px dotted black;
     border-radius: 5px;
 }

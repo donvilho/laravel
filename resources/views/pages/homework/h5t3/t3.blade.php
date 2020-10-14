@@ -13,7 +13,7 @@
         </div>
 
         <div class="right">
-            <div class="content-item">
+            <div class="content-item center">
                 <div class="container">
         
                     <style scoped>

@@ -35,8 +35,9 @@
                                   </tr>
                               </table>
                     </div>
-                    <button type="button" onclick="window.location='{{ url('customers/') }}'">Takaisin</button>
-                    <button type="button" onclick="window.location='{{ url('customers') }}/{{ $customer->id }}/edit'">Edit</button>
+                    <button type="button" onclick="window.location='{{ url('customers') }}/{{ $customer->id }}/edit'">Edit</button><br>
+                    <br><button type="button" onclick="window.location='{{ url('customers/') }}'">Takaisin</button>
+                    
                 </div>
             </div>
 

@@ -36,26 +36,31 @@
                                 </tr>
                                 @endforeach
                             </table>
-
-                            
-                        <form method="POST" action="{{url('customers/search/{term}') }}">
-                                {{ csrf_field() }}
-                                <input type="text" name="term" placeholder="Search customer">
-                                <button type="submit">Hae</button>
-                            </form>
-
-
                         </div>
-                        <button type="button" onclick="window.location='{{ url('customers/create') }}'">Add user</button>
+                        <form method="POST" action="{{url('customers/search/{term}') }}">
+                            {{ csrf_field() }}
+                            <input type="text" name="term" placeholder="Search customer">
+                            <button type="submit">Hae</button>
+                        </form>
+                        <br><button type="button" onclick="window.location='{{ url('customers/create') }}'">Add user</button><br><br>
                 </div>
             </div>
             <div class="item-right">
                 <div class="content-item">
-                    <div>
-                        <p>Tässä on listattu kaikki käyttäjät joita tietokannassa on.</p>
-                        <img src="{{url('images/h6/t12.png')}}" alt="Pic" class="center"><br><br>
-                        <img src="{{url('images/h6/t13.png')}}" alt="Pic" class="center"><br><br>
-                    </div>
+                   
+                        
+                            <p>Ensimmäisessä tehtävässä tuli melkein tehtyä tuo 2 tehtävä joten lisäsin vaan tuon haun. Lisäksi täytyy hieman miettiä muutamia lisä layoutteja jotta tyylitys olisi helpompaa.</p>
+                            <p>Alhaalla muutama kuva kun roplasin asiakkaita.</p>
+                                  <div class="center">
+                                    <img src="{{url('images/h6/t12.png')}}" alt="Pic" class="center"><br><br>
+                                      </div>   
+
+                                      <div class="center">
+                                        <img src="{{url('images/h6/t13.png')}}" alt="Pic" class="center"><br><br>
+                                      </div>
+                        
+                        
+                    
                    
                 </div>
             </div>

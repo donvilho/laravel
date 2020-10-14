@@ -37,25 +37,20 @@
                                 @endforeach
                             </table>
 
-                            
-                            <form method="POST" action="{{url('customers/search/{term}') }}">
-                                {{ csrf_field() }}
-                                <input type="text" name="term" placeholder="Search customer">
-                                <button type="submit">Hae</button>
-                            </form>
-
-
-                        </div>
-                        <button type="button" onclick="window.location='{{ url('customers/create') }}'">Add user</button>
-                        <button type="button" onclick="window.location='{{ url('customers/') }}'">List all</button> 
+                        </div> 
+                        <form method="POST" action="{{url('customers/search/{term}') }}">
+                            {{ csrf_field() }}
+                            <input type="text" name="term" placeholder="Search customer">
+                            <button type="submit">Hae</button>
+                        </form>
+                        <br><button type="button" onclick="window.location='{{ url('customers/') }}'">List all</button> 
                 </div>
             </div>
             <div class="item-right">
                 <div class="content-item">
                     <div>
-                        <p>Tässä on listattu kaikki käyttäjät joita tietokannassa on.</p>
-                        <img src="{{url('images/h6/t12.png')}}" alt="Pic" class="center"><br><br>
-                        <img src="{{url('images/h6/t13.png')}}" alt="Pic" class="center"><br><br>
+                        <p>Käyttäjähaun tulos.</p>
+                      
                     </div>
                    
                 </div>

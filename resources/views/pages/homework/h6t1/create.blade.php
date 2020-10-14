@@ -33,11 +33,11 @@
                             </div>
                       
                              <div>
-                               <button type="submit">Save</button>
+                               <br><button type="submit">Save</button>
                              </div>
                       
                         </form>
-                        <button type="button" onclick="window.location='{{ url('customers/') }}'">Takaisin</button>
+                        <br><button type="button" onclick="window.location='{{ url('customers/') }}'">Takaisin</button>
                       
                     </div>
 

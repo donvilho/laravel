@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Database\Eloquent\ModelException as ModelException;
 //muista tämä!
 use App\Customer;
 
@@ -41,11 +41,13 @@ class CustomerController extends Controller
     }
 
     public function update($id){
-        $customer = Customer::find($id);
-        $customer->name = request('name');
-        $customer->birth_date = request('birth_date');
-        $customer->save();
-        return redirect('/customers');
+  
+            $customer = Customer::find($id);
+            $customer->name = request('name');
+            $customer->birth_date = request('birth_date');
+            $customer->save();
+            return redirect('/customers');
+
     }
 
     public function destroy($id){
