@@ -45,6 +45,8 @@ Route::get('/customer/{id}', 'CustomerController@show');
 
 Route::get('/customers/create', 'CustomerController@create');
 
+Route::post('/customers/search/{term}', 'CustomerController@search');
+
 Route::post('/customers','CustomerController@store');
 
 Route::get('/customers/{id}/edit', 'CustomerController@edit');

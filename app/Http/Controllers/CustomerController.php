@@ -52,4 +52,10 @@ class CustomerController extends Controller
         Customer::find($id)->delete();
         return redirect('/customers');
     }
+
+    public function search(Request $term){
+        $search = $term->term;
+        $customers = Customer::where('name','LIKE',"%".$search."%")->get();
+        return view('pages.homework.h6t1.search')->with('customers', $customers);
+    }
 }

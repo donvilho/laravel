@@ -38,7 +38,7 @@
                             </table>
 
                             
-                        <form method="POST" action="{{url('customers/search/{term}') }}">
+                            <form method="POST" action="{{url('customers/search/{term}') }}">
                                 {{ csrf_field() }}
                                 <input type="text" name="term" placeholder="Search customer">
                                 <button type="submit">Hae</button>
@@ -47,6 +47,7 @@
 
                         </div>
                         <button type="button" onclick="window.location='{{ url('customers/create') }}'">Add user</button>
+                        <button type="button" onclick="window.location='{{ url('customers/') }}'">List all</button> 
                 </div>
             </div>
             <div class="item-right">

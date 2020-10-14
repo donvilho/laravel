@@ -10,9 +10,7 @@
 <div class="hw-List">
     <h3>Harjoitus 6</h3>
     <ul>
-        <li><a href="{{ url('/customers')}}">Tehtävä 1</a></li>
-        <li><a href="#">Tehtävä 2</a></li>
-        <li><a href="#">Tehtävä 3</a></li>
+        <li><a href="{{ url('/customers')}}">Tehtävä 1 / 2</a></li>
     </ul>
 </div>
 
