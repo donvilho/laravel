@@ -33,4 +33,22 @@ Route::get('/assignments/T3/Main', 'PageController@H5_mainView');
 Route::get('/appt2', function () {
     return view('pages.homework.h5t2.child');
 });
-//
+
+
+// CRUD routes
+
+Route::resource('customers','CustomerController');
+
+Route::get('/customers', 'CustomerController@index');
+
+Route::get('/customer/{id}', 'CustomerController@show');
+
+Route::get('/customers/create', 'CustomerController@create');
+
+Route::post('/customers','CustomerController@store');
+
+Route::get('/customers/{id}/edit', 'CustomerController@edit');
+
+Route::patch('/customers/{id}', 'CustomerController@update');
+
+Route::patch('/customers/{id}', 'CustomerController@delete');

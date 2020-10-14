@@ -1,0 +1,15 @@
+.header {
+    padding-top: 5%;
+    text-align: center;
+    background-color: #575757;
+    color: #f0ebeb;
+    font-size: 150%;
+    letter-spacing: 0.1875em;
+    border-radius: 5px;
+}
+
+.header-Content {
+    margin: auto;
+
+    padding-bottom: 15px;
+}
