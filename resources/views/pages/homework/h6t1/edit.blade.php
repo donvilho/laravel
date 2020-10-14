@@ -39,6 +39,19 @@
                            
                                 </form>
 
+                                <form method="POST" action="{{ url('/') }}/customers/{{ $customer->id}}">
+
+                                    @method('DELETE')
+                                    @csrf
+                              
+                                     <div>
+                                       <button type="submit">Delete</button>
+                                     </div>
+                              
+                                   </form>
+
+
+
                                 <button type="button" onclick="window.location='{{ url('customers/') }}'">Takaisin</button>    
                     </div>
                 </div>

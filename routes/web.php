@@ -51,4 +51,4 @@ Route::get('/customers/{id}/edit', 'CustomerController@edit');
 
 Route::patch('/customers/{id}', 'CustomerController@update');
 
-Route::patch('/customers/{id}', 'CustomerController@delete');
+Route::delete('/customers/{id}', 'CustomerController@destroy');
