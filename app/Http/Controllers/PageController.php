@@ -31,4 +31,23 @@ class PageController extends Controller
     {
         return view('pages.homework.h5t3.basket');
     }
+
+    public function H7MainView(){
+
+      return view('pages.homework.h7.t1.main');
+    }
+
+    public function H7regexp(Request $code){
+        
+        $pattern = '(^[0-9]{5}$|^[0-9]{5}-[0-9]{4}$)';
+
+        $test = $code->code;
+        if(preg_match($pattern, $test, $matches)){
+
+            return view('pages.homework.h7.t1.reg')->with('matches', $matches);
+        }
+        else{
+            return view('pages.homework.h7.t1.reg')->with('matches', $test);
+        }
+    }
 }

@@ -13,4 +13,9 @@
         <li><a href="{{ url('/customers')}}">Tehtävä 1 / 2</a></li>
     </ul>
 </div>
-
+<div class="hw-List">
+    <h3>Harjoitus 7</h3>
+    <ul>
+        <li><a href="{{ url('/regexp')}}">Tehtävä 1</a></li>
+    </ul>
+</div>

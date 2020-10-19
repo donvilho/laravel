@@ -34,6 +34,11 @@ Route::get('/appt2', function () {
     return view('pages.homework.h5t2.child');
 });
 
+// H7
+
+Route::post('/regexp/{code}', 'PageController@H7regexp');
+Route::get('/regexp', 'PageController@H7MainView');
+
 
 // CRUD routes
 
