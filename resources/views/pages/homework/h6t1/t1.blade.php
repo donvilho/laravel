@@ -58,6 +58,12 @@
                                       <div class="center">
                                         <img src="{{url('images/h6/t13.png')}}" alt="Pic" class="center"><br><br>
                                       </div>
+                                       <div class="center">
+                                        <img src="{{url('images/h6/routes.png')}}" alt="Pic" class="center"><br><br>
+                                      </div>
+                                       <div class="center">
+                                        <img src="{{url('images/h6/ctrl.png')}}" alt="Pic" class="center"><br><br>
+                                      </div>
                         
                         
                     
