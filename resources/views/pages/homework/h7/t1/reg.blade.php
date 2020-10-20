@@ -13,7 +13,7 @@
 
     <div class="right">
 
-  
+
         <div class="content-item">
 
             <h1>Testaa kelpaako koodisi!</h1>
@@ -24,14 +24,14 @@
                 <input type="text" name="code" placeholder="Try again">
                 <button type="submit">Hae</button>
             </form>
-            
+
 
             @if(is_array($matches) && count($matches) > 0)
-                @foreach ($matches as $match)
-                    <p><b style="color:green">Kelpaa! </b>{{$match}}</p> 
-                @endforeach
+            @foreach ($matches as $match)
+            <p><b style="color:green">Kelpaa! </b>{{$match}}</p>
+            @endforeach
             @else
-            <p><b style="color:red">Ei kelpaa! </b>{{$matches}}</p> 
+            <p><b style="color:red">Ei kelpaa! </b>{{$matches}}</p>
             @endif
         </div>
     </div>
