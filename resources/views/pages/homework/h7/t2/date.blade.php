@@ -37,11 +37,11 @@
                 <div class="content-item">
                     <br>
                      <div class="center">
-                         <div class="zoom"><img src="{{url('images/h7/t2.PNG')}}" alt="Pic" class="center"><br><br></div>
+                         <div class="zoom"><img src="{{url('images/h7/t2.png')}}" alt="Pic" class="center"><br><br></div>
                         
                     </div>
                     <div class="center">
-                        <div class="zoom"> <img src="{{url('images/h7/t2_1.PNG')}}" alt="Pic" class="center"><br><br></div>
+                        <div class="zoom"> <img src="{{url('images/h7/t2_1.png')}}" alt="Pic" class="center"><br><br></div>
                        
                     </div>
                 </div>
