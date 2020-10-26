@@ -46,9 +46,11 @@ Route::get('/date', 'PageController@H7DateMainView');
 Route::post('/metahaku/{str}', 'PageController@H7MetaSearch');
 Route::get('/metahaku', 'PageController@H7Search');
 
-Route::post('/meta/{str}', 'PageController@H7T4_search');
-Route::get('/meta', 'PageController@H7T4_index');
+Route::post('/meta/{str}', 'PageController@H7T3_search');
+Route::get('/meta', 'PageController@H7T3_index');
 
+Route::post('/metapattern/{str}', 'PageController@H7T4_search');
+Route::get('/metapattern', 'PageController@H7T4_index');
 
 
 

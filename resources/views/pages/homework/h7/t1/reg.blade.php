@@ -22,7 +22,7 @@
 
                     <form method="POST" action="{{url('regexp/{code}') }}">
                         {{ csrf_field() }}
-                        <input type="text" required name="code" placeholder="Try again">
+                        <input type="text" required name="code" placeholder="12345-1234">
                         <button type="submit">Hae</button>
                     </form>
 

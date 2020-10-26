@@ -64,49 +64,67 @@ class PageController extends Controller
     {
         $test = $code->code;
         $dt = DateTime::createFromFormat("Y-m-d", $test);
-        if($dt !== false && !array_sum($dt::getLastErrors())){
-            return view('pages.homework.h7.t2.date')->with('date',$test);
+        if ($dt !== false && !array_sum($dt::getLastErrors())) {
+            return view('pages.homework.h7.t2.date')->with('date', $test);
+        } else {
+            return view('pages.homework.h7.t2.date')->with('date', null);
         }
-        else{
-            return view('pages.homework.h7.t2.date')->with('date',null);
-        }
-        
     }
 
-    public function H7Search(){
+    public function H7Search()
+    {
 
         return view('pages.homework.h7.t3.main');
     }
 
-    public function H7MetaSearch(Request $str){
+    public function H7MetaSearch(Request $request)
+    {
 
-       switch($str->list){
-           case 'Google': 
-            return redirect()->away(url('https://www.google.com/search?q='.urlencode($str->str)));
+        switch ($request->list) {
+            case 'Google':
+                return redirect()->away(url('https://www.google.com/search?q=' . urlencode($request->str)));
             case 'Bing':
-            return redirect()->away(url('https://www.bing.com/search?q='.urlencode($str->str)));
-       }
-
-
+                return redirect()->away(url('https://www.bing.com/search?q=' . urlencode($request->str)));
+        }
     }
 
 
-    public function H7T4_index(){
+    public function H7T3_index()
+    {
 
         return view('pages.homework.h7.t3.main');
     }
 
-    public function H7T4_search(Request $str){
+    public function H7T3_search(Request $request)
+    {
 
-       switch($str->list){
-           case 'Google': 
-            return redirect()->away(url('https://www.google.com/search?q='.urlencode($str->str)));
+        switch ($request->list) {
+            case 'Google':
+                return redirect()->away(url('https://www.google.com/search?q=' . urlencode($request->str)));
             case 'Bing':
-            return redirect()->away(url('https://www.bing.com/search?q='.urlencode($str->str)));
-       }
-
-
+                return redirect()->away(url('https://www.bing.com/search?q=' . urlencode($request->str)));
+        }
     }
 
 
+    public function H7T4_index()
+    {
+        return view('pages.homework.h7.t4.main');
+    }
+
+    public function H7T4_search(Request $request)
+    {
+        $pattern = '([a-zA-Z]{5,30})';
+
+        if (!preg_match($pattern, $request->str, $matches)) {
+            return view('pages.homework.h7.t4.result')->with('error', 'Tarkista syöte! ' . $request->str);
+        } else {
+
+            if ($request->list == 'Google') {
+                return redirect()->away(url('https://www.google.com/search?q=' . urlencode($request->str)));
+            } else {
+                return view('pages.homework.h7.t4.result')->with('error', 'Bing ei ole käytössä!');
+            }
+        }
+    }
 }

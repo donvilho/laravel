@@ -19,5 +19,6 @@
         <li><a href="{{ url('/regexp')}}">Tehtävä 1</a></li>
         <li><a href="{{ url('/date')}}">Tehtävä 2</a></li>
         <li><a href="{{ url('/metahaku')}}">Tehtävä 3</a></li>
+        <li><a href="{{ url('/metapattern')}}">Tehtävä 4</a></li>
     </ul>
 </div>

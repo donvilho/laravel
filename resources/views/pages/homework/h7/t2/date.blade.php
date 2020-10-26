@@ -21,7 +21,7 @@
 
                     <form method="POST" action="{{url('date/{code}') }}">
                         {{ csrf_field() }}
-                        <input type="text" name="code" placeholder="Try again">
+                        <input type="text" name="code" placeholder="1999-09-09">
                         <button type="submit">Hae</button>
                     </form>
 
@@ -35,11 +35,14 @@
 
             <div class="item-right">
                 <div class="content-item">
+                    <br>
                      <div class="center">
-                        <img src="{{url('images/h7/regexp.png')}}" alt="Pic" class="center"><br><br>
+                         <div class="zoom"><img src="{{url('images/h7/t2.PNG')}}" alt="Pic" class="center"><br><br></div>
+                        
                     </div>
                     <div class="center">
-                        <img src="{{url('images/h7/regexp1.png')}}" alt="Pic" class="center"><br><br>
+                        <div class="zoom"> <img src="{{url('images/h7/t2_1.PNG')}}" alt="Pic" class="center"><br><br></div>
+                       
                     </div>
                 </div>
             </div>

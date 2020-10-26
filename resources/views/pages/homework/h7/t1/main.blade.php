@@ -23,7 +23,7 @@
 
                     <form method="POST" action="{{url('regexp/{code}') }}">
                         {{ csrf_field() }}
-                        <input type="text" required name="code" placeholder="Give code">
+                        <input type="text" required name="code" placeholder="12345-1234">
                         <button type="submit">Hae</button>
                     </form>
                     <br>
@@ -33,11 +33,16 @@
 
             <div class="item-right">
                 <div class="content-item">
+                    <br>
                     <div class="center">
-                        <img src="{{url('images/h7/regexp.png')}}" alt="Pic" class="center"><br><br>
+                        <div class="zoom">
+                             <img src="{{url('images/h7/regexp.png')}}" alt="Pic" class="center"><br><br>
+                        </div>
+                       
                     </div>
                     <div class="center">
-                        <img src="{{url('images/h7/regexp1.png')}}" alt="Pic" class="center"><br><br>
+                        <div class="zoom"><img src="{{url('images/h7/regexp1.png')}}" alt="Pic" class="center"><br><br></div>
+                        
                     </div>
                 </div>
             </div>
