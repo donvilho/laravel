@@ -1,18 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.homework')
 
-@section('content')
+@section('content-right')
 
-    <div class="content-grid">
 
-        <div class="left">
-            
-    <div class="content-item">
-        @include('include.homework')
-    </div>
-
-        </div>
-
-        <div class="right">
             <div class="content-item center">
                 <div class="container">
         
@@ -20,15 +10,13 @@
                         <?php include 'css/h5/style.css';?>
                     </style>
             
-                    @include('pages.homework.h5t3.nav')
+                    @include('pages.homework.h5.t3.nav')
                     <h2>OstosKoriTori</h2>
                     <div class="boxi">
                         @yield('subcontent')
                     </div>
               
-                </div>       
-            </div>
-        </div>
-    </div>
+                </div>      
+          </div>
 @endsection
 

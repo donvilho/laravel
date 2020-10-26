@@ -19,19 +19,19 @@ class PageController extends Controller
     }
 
 
-    public function homeworkView($id)
+    public function homeworkView($harj,$teht)
     {
-        return view('pages.homework.h5t' . $id . '.t' . $id);
+        return view('pages.homework.h' . $harj . '.t' . $teht.'.index');
     }
 
     public function H5_mainView()
     {
-        return view('pages.homework.h5t3.main');
+        return view('pages.homework.h5.t3.main');
     }
 
     public function H5_basketView()
     {
-        return view('pages.homework.h5t3.basket');
+        return view('pages.homework.h5.t3.basket');
     }
 
     public function H7MainView()

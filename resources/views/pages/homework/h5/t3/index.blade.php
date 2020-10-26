@@ -1,4 +1,4 @@
-@extends('pages.homework.h5t3.t3')
+@extends('pages.homework.h5.t3.main')
 
 @section('subcontent')
     <p>Lisää auto ostoskoriin klikkaamalla kuvaa!</p>

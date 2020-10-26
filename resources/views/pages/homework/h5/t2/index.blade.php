@@ -1,14 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.homework')
 
-@section('content')
-    <div class="content-grid">
-        <div class="left">
-            <div class="content-item">
-                @include('include.homework')
-            </div>
-        </div>
+@section('content-right')
 
-        <div class="right">
             <div class="content-item">
                 <div>
                     <h1>Tehtävä 2 [6p]</h1>
@@ -34,7 +27,5 @@
                          
                 </div>
             </div>
-        </div>
-    </div>
 
 @endsection

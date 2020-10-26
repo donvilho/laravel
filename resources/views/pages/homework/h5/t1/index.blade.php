@@ -1,15 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.homework')
 
-@section('content')
+@section('content-right')
 
-<div class="content-grid">
-    <div class="left">
-        <div class="content-item">
-            @include('include.homework')
-        </div>
-    </div>
 
-    <div class="right"> 
         <div class="content-item">
         <h1>Tehtävä 1 [8p]</h1>
             <h3>MS Azure-palvelin</h3>
@@ -34,9 +27,6 @@
             <div class="center">
                 <img src="{{url('images/h5/composer3.png')}}" alt="Pic" class="center"><br><br>
             </div>
-            
         </div>
-    </div>
-</div>
     
 @endsection
