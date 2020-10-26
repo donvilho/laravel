@@ -39,6 +39,22 @@ Route::get('/appt2', function () {
 Route::post('/regexp/{code}', 'PageController@H7regexp');
 Route::get('/regexp', 'PageController@H7MainView');
 
+Route::post('/date/{code}', 'PageController@H7Date');
+Route::get('/date', 'PageController@H7DateMainView');
+
+
+Route::post('/metahaku/{str}', 'PageController@H7MetaSearch');
+Route::get('/metahaku', 'PageController@H7Search');
+
+Route::post('/meta/{str}', 'PageController@H7T4_search');
+Route::get('/meta', 'PageController@H7T4_index');
+
+
+
+
+
+
+
 
 // CRUD routes
 

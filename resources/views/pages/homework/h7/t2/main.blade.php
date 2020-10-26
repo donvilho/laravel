@@ -2,6 +2,7 @@
 @section('content')
 
 
+
 <div class="content-grid">
 
     <div class="left">
@@ -12,34 +13,25 @@
 
     <div class="right">
 
-
         <div class="item-grid">
             <div class="item-left">
                 <div class="content-item">
+                    
+                    <h1>Anna päivämäärä</h1>
 
-                    <h1>Testaa kelpaako koodisi!</h1>
-                    <p>RegExp: (^[0-9]{5}$|^[0-9]{5}-[0-9]{4}$)</p>
-
-                    <form method="POST" action="{{url('regexp/{code}') }}">
+                    <form method="POST" action="{{url('date/{code}') }}">
                         {{ csrf_field() }}
-                        <input type="text" required name="code" placeholder="Try again">
+                        <input type="text" name="code" placeholder="Give code">
                         <button type="submit">Hae</button>
                     </form>
+                    <br>
 
-
-                    @if(is_array($matches) && count($matches) > 0)
-                    @foreach ($matches as $match)
-                    <p><b style="color:green">Kelpaa! </b>{{$match}}</p>
-                    @endforeach
-                    @else
-                    <p><b style="color:red">Ei kelpaa! </b>{{$matches}}</p>
-                    @endif
                 </div>
             </div>
 
             <div class="item-right">
                 <div class="content-item">
-                     <div class="center">
+                    <div class="center">
                         <img src="{{url('images/h7/regexp.png')}}" alt="Pic" class="center"><br><br>
                     </div>
                     <div class="center">
@@ -49,8 +41,11 @@
             </div>
 
         </div>
+
     </div>
 </div>
+
+
 
 
 @endsection

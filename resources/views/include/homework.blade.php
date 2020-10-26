@@ -17,5 +17,7 @@
     <h3>Harjoitus 7</h3>
     <ul>
         <li><a href="{{ url('/regexp')}}">Tehtävä 1</a></li>
+        <li><a href="{{ url('/date')}}">Tehtävä 2</a></li>
+        <li><a href="{{ url('/metahaku')}}">Tehtävä 3</a></li>
     </ul>
 </div>

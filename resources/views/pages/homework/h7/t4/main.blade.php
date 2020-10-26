@@ -16,14 +16,16 @@
         <div class="item-grid">
             <div class="item-left">
                 <div class="content-item">
+                    
+                    <h1>Metahakupalvelu</h1>
 
-
-                    <h1>Testaa kelpaako koodisi!</h1>
-                    <p>RegExp: (^[0-9]{5}$|^[0-9]{5}-[0-9]{4}$)</p>
-
-                    <form method="POST" action="{{url('regexp/{code}') }}">
+                    <form method="POST" action="{{url('metahaku/{str}') }}">
                         {{ csrf_field() }}
-                        <input type="text" required name="code" placeholder="Give code">
+                        <input type="text" name="str" placeholder="Mitä haetaan" require pattern="[a-zA-Z0-9]{5,30}">
+                        <select required name="list">
+                            <option value="Google">Google</option>
+                            <option value="Bing">Bing</option>
+                        </select>
                         <button type="submit">Hae</button>
                     </form>
                     <br>
@@ -34,10 +36,10 @@
             <div class="item-right">
                 <div class="content-item">
                     <div class="center">
-                        <img src="{{url('images/h7/regexp.png')}}" alt="Pic" class="center"><br><br>
+                        <img src="{{url('images/h7/t3_0.png')}}" alt="Pic" class="center"><br><br>
                     </div>
                     <div class="center">
-                        <img src="{{url('images/h7/regexp1.png')}}" alt="Pic" class="center"><br><br>
+                        <img src="{{url('images/h7/t3_1.png')}}" alt="Pic" class="center"><br><br>
                     </div>
                 </div>
             </div>
