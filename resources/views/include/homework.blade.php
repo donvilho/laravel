@@ -22,3 +22,10 @@
         <li><a href="{{ url('/metapattern')}}">Tehtävä 4</a></li>
     </ul>
 </div>
+<div class="hw-List">
+    <h3>Harjoitus 8</h3>
+    <ul>
+        <li><a href="{{ url('/assignments/h8')}}">Tehtävä 1</a></li>
+
+    </ul>
+</div>

@@ -52,9 +52,27 @@ Route::get('/meta', 'PageController@H7T3_index');
 Route::post('/metapattern/{str}', 'PageController@H7T4_search');
 Route::get('/metapattern', 'PageController@H7T4_index');
 
+// H8
+
+Route::get('/assignments/h8', 'PageController@H8');
 
 
+//studetronic
 
+Route::get('studentjson', 'StudentController@studentjson');
+Route::get('coursejson', 'StudentController@coursejson');
+
+Route::get('student', 'StudentController@studentlist');
+Route::get('course', 'StudentController@courselist');
+
+Route::get('courses', 'StudentController@courses');
+
+Route::get('courseview', 'StudentController@courseview');
+
+Route::get('studentcredits', 'StudentController@studentcredits');
+
+Route::get('/studentform', 'StudentController@studentform');
+Route::post('/storestudent','StudentController@store');
 
 
 

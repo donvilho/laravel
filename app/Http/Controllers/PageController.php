@@ -127,4 +127,9 @@ class PageController extends Controller
             }
         }
     }
+
+     public function H8()
+    {
+        return view('pages.homework.h8.main');
+    }
 }
