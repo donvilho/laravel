@@ -13,7 +13,7 @@
         <div class="content-item">
         <h1>Tehtävä 1 [10p]</h1>
             <div>
-                <p>Eipä erikoista, meni materiaalin mukaan ihan kivasti.</p>
+                <p>Vähän probleemia oli tuon palvelimen tietokannan kanssa ku päivitin githubista.. muuten meni materiaalin mukaan ihan kivasti.</p>
                 <p>Toivottavasti ei unohtunut mitään kun oli sen verran pitkä setti.</p>
                 <p>Alempana linkki joka aukeaa erilliselle sivulle</p>
                 <br>
