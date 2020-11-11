@@ -17,8 +17,7 @@
                 <br>
                 <a href="{{url('/student')}}" target="_blank"><b>Studetronic</b></a>
                 <br>
-
-   
+                </div>
         </div>
     </div>
 </div>

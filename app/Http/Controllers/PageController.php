@@ -132,4 +132,9 @@ class PageController extends Controller
     {
         return view('pages.homework.h8.main');
     }
+
+       public function H9()
+    {
+        return view('pages.homework.h9.main');
+    }
 }

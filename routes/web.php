@@ -55,6 +55,7 @@ Route::get('/metapattern', 'PageController@H7T4_index');
 // H8
 
 Route::get('/assignments/h8', 'PageController@H8');
+Route::get('/assignments/h9', 'PageController@H9');
 
 
 //studetronic
