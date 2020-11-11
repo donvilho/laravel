@@ -26,7 +26,10 @@ class StudentController extends Controller
         $students = Student::paginate(2);
         return view('studentronic/students')->with('students', $students);
     }
-
+   public function student()
+    {
+        return view('studentronic/welcome');
+    }
     public function courses()
     {
         $course = Course::all();

@@ -59,10 +59,12 @@ Route::get('/assignments/h8', 'PageController@H8');
 
 //studetronic
 
+Route::get('student', 'StudentController@student');
+
 Route::get('studentjson', 'StudentController@studentjson');
 Route::get('coursejson', 'StudentController@coursejson');
 
-Route::get('student', 'StudentController@studentlist');
+Route::get('student/list', 'StudentController@studentlist');
 Route::get('course', 'StudentController@courselist');
 
 Route::get('courses', 'StudentController@courses');
@@ -95,3 +97,35 @@ Route::get('/customers/{id}/edit', 'CustomerController@edit');
 Route::patch('/customers/{id}', 'CustomerController@update');
 
 Route::delete('/customers/{id}', 'CustomerController@destroy');
+
+// Auth
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+//Route::get('users', 'UserController@list_all');
+
+//Route::get('harkat', 'HarkkaController@list_all');
+
+//Route::get('/pscores', 'KyselyController@list_personal_scores');
+
+Route::group(['middleware' => ['auth', 'admin']], function() {
+    // your routes
+    Route::get('users', 'UserController@list_all');
+    Route::get('harkat', 'HarkkaController@list_all');
+});
+
+Route::get('/pscores', [
+    'middleware' => 'auth',
+    'uses' => 'KyselyController@list_personal_scores'
+]);
+
+
+// Lomake tiedoston lataamiseksi
+Route::get('upload', 'CsvController@create');
+
+// toiminto tiedoston rivien lisäämiseksi tietokantaan
+Route::post('csvsaved', 'CsvController@store');
